@@ -1,0 +1,35 @@
+baseURL = "https://<your-username>.github.io/tech-writing-portfolio/"
+languageCode = "en-us"
+title = "Technical Writing Portfolio"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  # Search
+  disableSearch = false
+  fuseOpts = { isCaseSensitive = false, shouldSort = true }
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"] # JSON enables PaperMod's search
+
+[markup.goldmark.renderer]
+  unsafe = true # allow HTML (for <details> expanders)
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Pieces"
+    url = "/pieces/"
+    weight = 2
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 3
