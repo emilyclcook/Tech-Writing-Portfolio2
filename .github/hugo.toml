@@ -33,3 +33,6 @@ paginate = 10
     name = "About"
     url = "/about/"
     weight = 3
+
+mkdir -p content/pieces layouts/shortcodes assets/css/extended
+
